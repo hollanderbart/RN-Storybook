@@ -13,6 +13,7 @@ const Tabs = () => (
       name="Home"
       component={Home}
       options={{
+        headerShown: false,
         tabBarIcon: ({color, size}) => <HomeIcon color={color} size={size} />,
       }}
     />
@@ -21,6 +22,7 @@ const Tabs = () => (
         name="Storybook"
         component={StorybookUIRoot}
         options={{
+          headerShown: false,
           tabBarIcon: ({color, size}) => (
             <StorybookIcon color={color} size={size} />
           ),
